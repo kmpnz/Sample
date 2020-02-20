@@ -20,4 +20,9 @@ platform :ios do
   lane :custom_lane do
     # add actions here: https://docs.fastlane.tools/actions
   end
+
+  desc "Runs the tests"
+  lane :test do
+    scan(scheme: "Sample")
+  end
 end
