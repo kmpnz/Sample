@@ -8,5 +8,4 @@ jobs:
         uses: lekterable/branchlint-action@v1.0.0
         with:
           allowed: |
-            development
-            /(epic|feat|fix|chore)/DEV-\d{4}/i
+            /^FUL-\d{1,}.*$/gmi
