@@ -1,0 +1,12 @@
+name: Branchlint
+on: pull_request
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint branch name
+        uses: lekterable/branchlint-action@v1.0.0
+        with:
+          allowed: |
+            development
+            /(epic|feat|fix|chore)/DEV-\d{4}/i
